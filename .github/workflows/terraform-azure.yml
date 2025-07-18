@@ -10,6 +10,10 @@ jobs:
     name: Terraform Deploy
     runs-on: ubuntu-latest
 
+    defaults:
+      run:
+        working-directory: .
+
     steps:
     - name: Checkout code
       uses: actions/checkout@v3
